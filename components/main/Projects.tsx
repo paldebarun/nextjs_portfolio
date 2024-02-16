@@ -1,5 +1,24 @@
+"use client";
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import { projectdata } from "@/constants/index";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+// import './styles.css';
+
+// import { Autoplay } from 'swiper/modules';
+// import './styles.css';
+// import { Pagination } from 'swiper/modules';
 
 const Projects = () => {
   return (
@@ -10,23 +29,54 @@ const Projects = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-      </div>
+
+      {/* <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        slidesPerView='1'
+        modules={[Autoplay]}
+        className="mySwiper  h-auto flex items-center"
+      >
+     {
+      projectdata.map((project,index)=>(
+
+        <SwiperSlide key={index} >
+       
+         <ProjectCard
+            src={project.source}
+          title={project.title}
+          description={project.description} />
+
+        </SwiperSlide>
+      ))
+
+     }
+
+
+      </Swiper> */}
+
+      <Carousel       opts={{
+        align: "start",
+      }}
+      className="w-8/12 sm:w-9/12  max-w-3xl md:max-w-5xl z-[20]">
+        <CarouselContent >
+          {projectdata.map((project, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <ProjectCard
+                src={project.source}
+                title={project.title}
+                description={project.description}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   );
 };
