@@ -3,6 +3,7 @@ import Navbar from "@/components/main/Navbar";
 import StarsCanvas from "@/components/main/StarBackground";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,13 +20,22 @@ export default function RootLayout({
 }>) {
 
   console.log(inter);
+  
+
+
+
   return (
     <html lang="en">
+
+      <head>
+      <link rel="icon" href="/pngwing.com.png" />
+      </head>
+
       <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden `}>
         <StarsCanvas />
         <Navbar />
         {children}</body>
-        <Footer />
+        {/* <Footer /> */}
     </html>
   );
 }

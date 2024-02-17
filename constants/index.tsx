@@ -70,19 +70,22 @@ export const Skill_data = [
       name: "Linkedin",
       src: "/linkedin.png",
       width:30,
-      height:24
+      height:24,
+      link:"www.linkedin.com/in/debarun-pal-3ba144216"
     },
     {
       name: "Facebook",
       src: "/facebook.png",
       width:32,
-      height:24
+      height:24,
+      link:"https://www.facebook.com/profile.php?id=100070630164250&mibextid=ZbWKwL"
     },
     {
       name: "github",
       src: "/github.png",
       width:30,
-      height:30
+      height:30,
+      link:"https://github.com/paldebarun"
     },
   ];
   
@@ -169,28 +172,32 @@ export const Skill_data = [
 
   export const projectdata=[
    {
-    source:"/NextWebsite.png",
-    title:"Modern Next.js Portfolio",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    source:"/project2.png",
+    title:"Ecommerce website",
+    description:"Search explore and buy products of your choice",
+    link:"https://ecomzyui.vercel.app/home"
 
    },
    {
-    source:"/CardImage.png",
-    title:"Interactive Website Cards",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    source:"/project3.png",
+    title:"Interactive ayurvedic Website ",
+    description:"A Website for ayurvedic products",
+    link:"https://devbhumi-ratan-herbal.vercel.app/"
    },
    {
    
     source:"/SpaceWebsite.png",
     title:"Space Themed Website",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description:"It is a next js portfolio with 3D animations and appealing visual effects ",
+    link:"https://blogapp2-igp6.vercel.app/"
 
    },
    {
    
-    source:"/SpaceWebsite.png",
-    title:"Space Themed Website",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    source:"/project1.png",
+    title:"Blogging website",
+    description:"create and explore exciting and interesting blogs here",
+    link:"https://blogapp2-igp6.vercel.app/"
 
    },
    {

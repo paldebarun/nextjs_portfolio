@@ -32,11 +32,12 @@ const SkillDataProvider = ({ src, width, height, index} : Props) => {
   custom={index}
   transition={{delay: index * animationDelay}}
   >
-    <Image
+    <img
 src={src}
-width={width}
-height={height}
+// width={width}
+// height={height}
 alt='skill image'
+className="w-[25px] sm:w-[40px]"
     />
   </motion.div>
   )

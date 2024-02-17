@@ -6,6 +6,7 @@ import { projectdata } from "@/constants/index";
 // import 'swiper/css';
 // import 'swiper/css/pagination';
 // import 'swiper/css/navigation';
+
 import {
   Carousel,
   CarouselContent,
@@ -13,6 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
 
 // import './styles.css';
 
@@ -66,11 +68,15 @@ const Projects = () => {
         <CarouselContent >
           {projectdata.map((project, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              
+              
               <ProjectCard
                 src={project.source}
                 title={project.title}
                 description={project.description}
+                url={project.link}
               />
+             
             </CarouselItem>
           ))}
         </CarouselContent>
