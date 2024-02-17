@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-0 sm:px-[7px]">
         <a
-          href="#about-me"
+          href="/"
           className="h-auto w-auto flex gap-5 items-center justify-center"
         >
           <img
