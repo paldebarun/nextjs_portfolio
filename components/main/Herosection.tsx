@@ -5,7 +5,7 @@ const Herosection = () => {
   return (
     <div   className=' h-full w-full gap-[50px] flex flex-col '>
        
-       <video  loop  autoPlay muted className=' rotate-180 absolute top-[-300px] xl:top-[-340px]  h-full w-full left-0 z-[1] object-cover'>
+       <video  loop  autoPlay muted className=' rotate-180 absolute top-[-250px]  h-full w-full left-0 z-[1] object-cover'>
         <source src='/blackhole.webm'  type='video/webm'/>
        </video>
        
