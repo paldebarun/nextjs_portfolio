@@ -5,12 +5,12 @@ interface Props {
   src: string;
   title: string;
   description: string;
-  url:string
+  url_link:string
 }
 
-const ProjectCard = ({ src, title, description ,url}: Props) => {
+const ProjectCard = ({ src, title, description ,url_link}: Props) => {
   return (
-    <a href={url} >
+    <a href={url_link} >
     <div className="relative overflow-hidden h-[500px] rounded-lg shadow-lg border border-[#2A0E61]">
       <Image
         src={src}

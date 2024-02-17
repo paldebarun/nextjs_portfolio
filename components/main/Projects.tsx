@@ -74,7 +74,7 @@ const Projects = () => {
                 src={project.source}
                 title={project.title}
                 description={project.description}
-                url={project.link}
+                url_link={project.link}
               />
              
             </CarouselItem>
