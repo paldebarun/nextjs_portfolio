@@ -1,17 +1,17 @@
 
 import React from "react";
-import NextLink from "next/link";
+// import NextLink from "next/link";
 // import {
 //   RxDiscordLogo,
 //   RxGithubLogo,
 // } from "react-icons/rx";
 
-import { FaGithub } from "react-icons/fa";
-import { CiFacebook,CiLinkedin  } from "react-icons/ci";
+// import { FaGithub } from "react-icons/fa";
+// import { CiFacebook,CiLinkedin  } from "react-icons/ci";
 
 
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+// import { FaLinkedin, FaFacebook } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
